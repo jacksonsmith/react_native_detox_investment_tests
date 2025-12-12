@@ -19,7 +19,11 @@
     "detox:build:android": "detox build --configuration android.emu.release",
     "detox:build:ios": "npx pod-install && detox build --configuration ios.sim.release",
     "detox:test:android": "detox test --configuration android.emu.release",
-    "detox:test:ios": "detox test --configuration ios.sim.release"
+    "detox:test:ios": "detox test --configuration ios.sim.release",
+    "detox:build:android:windows": "detox build --configuration android.emu.release --config-path .detoxrc.windows.js",
+    "detox:test:android:windows": "detox test --configuration android.emu.release --config-path .detoxrc.windows.js",
+    "detox:build:android:debug:windows": "detox build --configuration android.emu.debug --config-path .detoxrc.windows.js",
+    "detox:test:android:debug:windows": "detox test --configuration android.emu.debug --config-path .detoxrc.windows.js"
   },
   "jest": {
     "preset": "jest-expo",
